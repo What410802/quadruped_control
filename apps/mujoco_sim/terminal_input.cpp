@@ -122,6 +122,14 @@ void TerminalInput::handle_character(
             input.switch_policy = true;
         }
         break;
+    case 'f': input.select_policy = true; input.policy_name = "flat_ft"; break;
+    case 'g': input.select_policy = true; input.policy_name = "loose_ft"; break;
+    case 'j': input.select_policy = true; input.policy_name = "limit_bar_ft"; break;
+    case 'b': input.select_policy = true; input.policy_name = "bridge_ft"; break;
+    case 't': input.select_policy = true; input.policy_name = "stairs_ft"; break;
+    case 'y': input.select_policy = true; input.policy_name = "high_wall_ft"; break;
+    case 'u': input.select_policy = true; input.policy_name = "slope_ft"; break;
+    case 'n': input.select_policy = true; input.policy_name = "slalom_ft"; break;
     case '3':
         if (fixed_drive_enabled_)
         {

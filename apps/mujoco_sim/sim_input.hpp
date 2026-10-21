@@ -14,6 +14,8 @@ struct SimInput
     bool getup{false};          // 0：请求起立
     bool start_rl{false};       // 1：从 Stand 启动 RL 行走
     bool switch_policy{false};  // 2/3：Running 中切换到策略循环的下一项
+    bool select_policy{false};  // F/G/J/B/T/Y/U/N：按名字选择手动状态 policy
+    const char* policy_name{nullptr};  // select_policy 时为 policy switch 中的名字
     bool bridge_drive{false};   // 2：blackW Bridge drive
     bool low_bar_drive{false};  // 3：blackW Low-bar drive
     bool car_drive{false};      // 4：blackW Car drive

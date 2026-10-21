@@ -41,6 +41,7 @@ inline void print_terminal_help(const bool policy_ready)
               << "  4 Car  5 Retry  6 Event chain\n"
               << "  9 趴下  P 被动  R 重置\n"
               << "  W/S 前后 ±0.1  A/D 横移 ±0.1  Q/E 转向 ±0.1  Space 速度归零\n"
+              << "  状态策略: F flat  G loose  J limit_bar  B bridge  T stairs  Y high_wall  U slope  N slalom\n"
               << "  K 暂停/继续  H 帮助  X/Esc 退出\n";
     if (!policy_ready)
     {
